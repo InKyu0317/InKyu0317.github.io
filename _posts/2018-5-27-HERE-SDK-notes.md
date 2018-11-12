@@ -9,15 +9,15 @@ title: HERE SDK notes
   * Mobile SDK <Starter, Premium> (Android, iOS), Premium version provides vector based map
   * Automotive
 
-* Android SDK documentation(https://developer.here.com/documentation/android-premium/topics/introduction.html)
-* SDK & API pdf downloads(https://developer.here.com/documentation/versions)
-* Github Example code(https://github.com/heremaps/here-android-sdk-examples)
+* Android SDK documentation [link](https://developer.here.com/documentation/android-premium/topics/introduction.html)
+* SDK & API pdf downloads [link](https://developer.here.com/documentation/versions)
+* Github Example code [link](https://github.com/heremaps/here-android-sdk-examples)
 
 * Android SDK system requirement
   * Minimum API: Android 4.1 (API level 16)
   * RAM: 60MB
   * SDK library space: 25MB
-  * Map Data 공간: 50MB
+  * Map Data space: 50MB
   * Internet Connection
   * 256MB cached memory
 
@@ -27,7 +27,7 @@ title: HERE SDK notes
   * Directions (Finds multiple routes from starting position to destination)
   * Turn by turn navigations
 
-* Map (App 과 Map 의 관계)
+* Map
   * MVC pattern: MapFragment (View) + Controller (implemented by developer) + Map (Model)
   * MapFragment: Gesture (Finger), Map Scheme(Explore, Overlays, Navigation mode)
   * MapEngine: creates a Map instance for MapFragment

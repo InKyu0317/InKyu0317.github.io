@@ -22,7 +22,7 @@ the app i am developing requires
   * Light-weight (if there noise around, CPU usage may increase) 
   * Supports various platforms and programming languages
   * Need a commercial license (Please contact snowboy@kitt.ai)
-  * Android Demo [link](https://github.com/Kitt-AI/snowboy/tree/master/examples/Android)
+  * Android Demo [https://github.com/Kitt-AI/snowboy/tree/master/examples/Android](https://github.com/Kitt-AI/snowboy/tree/master/examples/Android)
   
 * [Porcupine](https://github.com/Picovoice/Porcupine) (Picovoice) 
   * Alireza Kenarsari (Founder at Picovoice) says porcupine has lower miss rate than snowboy
@@ -33,7 +33,7 @@ the app i am developing requires
   * Provides (Standard, Tiny) version
   
 * [PocketSphinx](https://cmusphinx.github.io/wiki/tutorialandroid/)
-  * demo: [link](https://github.com/cmusphinx/pocketsphinx-android-demo)
+  * demo: [https://github.com/cmusphinx/pocketsphinx-android-demo](https://github.com/cmusphinx/pocketsphinx-android-demo)
 
 ## Speech to Text & Text to Speech (Korean)
 
@@ -46,7 +46,7 @@ the app i am developing requires
     * explain the difference between English and Korean
   * using AWS server, web crawler to collect 13GB pronounciation dictionary and language models
 
-* KaKao API (Newton API) https://developers.kakao.com/docs/android/speech 20,000 requests free
+* [KaKao API](https://developers.kakao.com/docs/android/speech) (Newton API) 20,000 requests free
   * provides both STT & TTS
   * reaserch of open source API(Korean): [link](http://jse.or.kr/AJMAHS/papers/v7n8/38.pdf)
   * good quality of speech
@@ -65,6 +65,3 @@ the app i am developing requires
 * IBM watson (SK NUGU use this API: http://www.newspim.com/news/view/20170206000145)
   * STT: [link](https://console.bluemix.net/docs/services/speech-to-text/getting-started.html#gettingStarted)
   * TTS: [link](https://console.bluemix.net/docs/services/text-to-speech/getting-started.html#gettingStarted)
-
-
- 

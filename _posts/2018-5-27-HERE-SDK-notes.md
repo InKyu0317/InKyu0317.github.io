@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HERE SDK notes version 1.0
+title: HERE SDK notes
 ---
 
 * SDK & API products
@@ -9,9 +9,9 @@ title: HERE SDK notes version 1.0
   * Mobile SDK <Starter, Premium> (Android, iOS), Premium version provides vector based map
   * Automotive
 
-Android SDK documentation page: https://developer.here.com/documentation/android-premium/topics/introduction.html
-SDK & API pdf downloads: https://developer.here.com/documentation/versions
-Github Example code : https://github.com/heremaps/here-android-sdk-examples 
+* Android SDK documentation(https://developer.here.com/documentation/android-premium/topics/introduction.html)
+* SDK & API pdf downloads(https://developer.here.com/documentation/versions)
+* Github Example code(https://github.com/heremaps/here-android-sdk-examples)
 
 * Android SDK system requirement
   * Minimum API: Android 4.1 (API level 16)

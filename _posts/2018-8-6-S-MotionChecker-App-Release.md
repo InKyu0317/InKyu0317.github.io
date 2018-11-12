@@ -3,7 +3,7 @@ layout: post
 title: Daedeok HRD Tech S Motion Checker Android Application Release (Alpha version)
 ---
 
-## S Motion Android app 
+### S Motion Android app
 
 * download [link](https://play.google.com/apps/testing/alpha.studysensor.inkyu.studysensor)
 * Android 5.1+

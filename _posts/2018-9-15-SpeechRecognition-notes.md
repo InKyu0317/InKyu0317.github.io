@@ -3,14 +3,14 @@ layout: post
 title: Recent research about open source speech recognition libraries
 ---
 
-## What is the issue?
+### What is the issue?
 
 the app i am developing requires
 * a coustomized hotword(keyword) detection
 * korean text to korean speech
 * korea speech to korean text
 
-## Hotword detection (Continuous Speech Recognition)
+### Hotword detection (Continuous Speech Recognition)
 
 * Snowboy (KITT.AI)
   * customizable hotword detection engine for you to create your own hotword like "OK Google" or "Alexa"
@@ -35,7 +35,7 @@ the app i am developing requires
 * [PocketSphinx](https://cmusphinx.github.io/wiki/tutorialandroid/)
   * demo: [https://github.com/cmusphinx/pocketsphinx-android-demo](https://github.com/cmusphinx/pocketsphinx-android-demo)
 
-## Speech to Text & Text to Speech (Korean)
+### Speech to Text & Text to Speech (Korean)
 
 * [kaldi](http://kaldi-asr.org/) is a toolkit for speech recognition written in C++
 

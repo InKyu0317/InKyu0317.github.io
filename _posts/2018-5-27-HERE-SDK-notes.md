@@ -3,14 +3,14 @@ layout: post
 title: HERE SDK notes
 ---
 
-## SDK & API products
+### SDK & API products
 
 * Javascript API
 * REST API
 * Mobile SDK <Starter, Premium> (Android, iOS), Premium version provides vector based map
 * Automotive
 
-## Android SDK system requirement
+### Android SDK system requirement
 
 * Minimum API: Android 4.1 (API level 16)
 * RAM: 60MB
@@ -22,14 +22,14 @@ title: HERE SDK notes
 * SDK & API pdf downloads [link](https://developer.here.com/documentation/versions)
 * Github Example code [link](https://github.com/heremaps/here-android-sdk-examples)
 
-## Main features
+### Main features
   
 * Maps (Multiple Layers)
 * Positioning (Driver's position)
 * Directions (Finds multiple routes from starting position to destination)
 * Turn by turn navigations
 
-## Map
+### Map
   
 * MVC pattern: MapFragment (View) + Controller (implemented by developer) + Map (Model)
 * MapFragment: Gesture (Finger), Map Scheme(Explore, Overlays, Navigation mode)
@@ -43,7 +43,7 @@ title: HERE SDK notes
     * MapEngine makes MapLoader object and using Listener to get fetching opertion result
     * MapPackage is element of MapData, they are classified according to Regions
 
-## Positioning
+### Positioning
   
 * Basic
   * GPS, GPS_NETWORK, WI-FI
@@ -52,7 +52,7 @@ title: HERE SDK notes
   * Offline, Turnnel (MapMatching, RadioPositioning) with WI-FI or Bluetooth
   * Satellite-based (GNSS)
 
-## Directions (car & pedestrian)
+### Directions (car & pedestrian)
   
 * Route calculation classes
   * CoreRouter: calculate route
@@ -77,7 +77,7 @@ title: HERE SDK notes
 * Route Serialization
   * converts to binary
 
-## Turn by turn navigation
+### Turn by turn navigation
 
 * Navigation Manager Class 
   * simulate, navigation, tracking mode

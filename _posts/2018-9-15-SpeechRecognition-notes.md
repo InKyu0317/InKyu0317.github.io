@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Recent research about open source speech recognition libraries
 ---
 

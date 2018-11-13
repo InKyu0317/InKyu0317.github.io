@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Daedeok HRD Tech S Motion Checker Android Application Release (Alpha version)
 ---
 

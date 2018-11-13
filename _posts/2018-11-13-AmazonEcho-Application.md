@@ -16,3 +16,4 @@ title: Amazon Echo Application
 
  - They use custom alexa skill + AWS lambda .. why?
 Custom Alexa Skill [link](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html)
+tutorial [link](https://www.hackster.io/tartanguru/run-google-assistant-on-your-amazon-echo-d99235)

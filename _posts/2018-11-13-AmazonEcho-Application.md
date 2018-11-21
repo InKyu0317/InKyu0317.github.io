@@ -17,3 +17,14 @@ title: Amazon Echo Application
  - They use custom alexa skill + AWS lambda .. why?
 Custom Alexa Skill [link](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html)
 tutorial [link](https://www.hackster.io/tartanguru/run-google-assistant-on-your-amazon-echo-d99235)
+
+### Alexa custom skill
+
+Invocation: it's a name for the skill
+Intent: definition of dialog flow (invoked by Utterance)
+Utterance: sample sentence for each intent
+
+### AWS lambda
+
+FaaS (Function as a service) Architecture
+Compute Service from AWS

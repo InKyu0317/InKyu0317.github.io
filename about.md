@@ -6,4 +6,4 @@ permalink: /about/
 
 ### Contact me
 
-[inkyu.park@halla.com](mailto:inkyu.park@halla.com)
+[ip278116@gmail.com](mailto:ip278116@gmail.com)

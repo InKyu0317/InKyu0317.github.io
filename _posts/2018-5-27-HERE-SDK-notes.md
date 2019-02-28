@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HERE SDK notes
+title: HERE SDK note
 ---
 
 ### SDK & API products

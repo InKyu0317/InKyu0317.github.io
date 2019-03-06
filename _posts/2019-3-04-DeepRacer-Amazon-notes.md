@@ -3,6 +3,8 @@ layout: page
 title: study note about ROS on AWS
 ---
 
+### Research note about Amazon Deepracer
+
 ### Reference
 [DeepRacer latest developer guide](https://docs.aws.amazon.com/deepracer/latest/developerguide/awsracerdg.pdf#%5B%7B%22num%22%3A565%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C72%2C416.96%2Cnull%5D)
 

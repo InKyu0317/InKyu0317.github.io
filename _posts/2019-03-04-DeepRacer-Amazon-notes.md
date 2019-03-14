@@ -21,6 +21,12 @@ title: study note about ROS on AWS
 
 ### Reinforcement Learning (강화학습)
 
+- [UCL - David Silver RL 슬라이드 웹사이트](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+ 다른 기계학습과 다른점: 
+ 1. 강화학습에는 supervisor 가없다. Reward 만 존재. 답을 알려주는 사람이 없다.
+ 2. Reward 는 목적을 정해줄뿐 구체적으로 어떻게 문제를 해결할지 정답을 주는게 아니라 여러번 반복된 경험을 통해 스스로 정답을 찾아가는 방식
+ 3. Feedback이 딜레이 될수 있다. 시간이 굉장히 중요하다.
+
 - [팡요랩 - 강화학습 강좌](https://www.youtube.com/playlist?list=PLpRS2w0xWHTcTZyyX8LMmtbcMXpd3s4TU)
 
 - [Reinforcement-Learning Basic](https://www.youtube.com/watch?v=2xATEwcRpy8)
@@ -92,5 +98,3 @@ def reward_function3(on_track, x, y, distance_from_center, car_orientation, prog
 - Train and Evaluate models thru Amazon SageMaker notebooks
 
 ### AWS sagemaker & AWS robomaker 환경 적응하기
-
-### Reinforment Learning 

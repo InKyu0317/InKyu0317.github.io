@@ -1,6 +1,6 @@
 ---
 layout: page
-title: study note about ROS on AWS
+title: study note about AWS Deepracer
 ---
 
 ### Research note about Amazon Deepracer
@@ -20,17 +20,13 @@ title: study note about ROS on AWS
 - AWS deepracer
   - 1:18 스케일, mounted camera, on-board compute module
   - The module can run inference(추리) against a deployed reinforcement learning model in order to drive itself along a track. The compute module and the vehicle chassis are powered by dedicated batteries known as the compute battery and the drive batter
-  - 시뮬레이터에서 강화학습 모델 만들기 -> 경주 트랙 시뮬레이션에서 모델을 평가 <br>-> 하이퍼파라메터를 튜닝, 훈련을 해 랩타임 줄이기 -> 딥레이서 리그 경기 출전
+  - 시뮬레이터에서 강화학습 모델 만들기 -> 경주 트랙 시뮬레이션에서 모델을 평가 -> 하이퍼파라메터를 튜닝, 훈련을 해 랩타임 줄이기 -> 딥레이서 리그 경기 출전
   - <img src="../images/ARC_1.png" alt="drawing" width="900"/>
 
 ### DeepRacer 시작
 - Signup AWS and create model
 - IAM (what is IAM? and why we need it?)
-  <br>
-  <pre>
-  AWS Identity and Access Management(IAM) 사용자는 AWS에서 생성하는 엔터티로서 AWS와 상호 작용하기 위해 그 엔터티를 사용하는 사람또는 애플리케이션을 나타냅니다. AWS에서 사용자는 이름과 자격 증명으로 구성됩니다
- </pre>
-
+- AWS Identity and Access Management(IAM) 사용자는 AWS에서 생성하는 엔터티로서 AWS와 상호 작용하기 위해 그 엔터티를 사용하는 사람또는 애플리케이션을 나타냅니다. AWS에서 사용자는 이름과 자격 증명으로 구성됩니다
 - Deepracer에서 쓰이는 AWS 서비스
   - Amazon S3
     - To store trained model artifacts in an Amazon S3 bucket. 
@@ -97,8 +93,25 @@ title: study note about ROS on AWS
 
 
 ### Reward Function
+
+| Parameter            |  Type         |   Range                           |         Description                 
+| -------------------- | ------------- | --------------------------------- | ----------------------------------- 
+|  on_track            | boolean       | True/False                        | 하얀색 트랙 가장자리에서 벗어나 있는지
+|  x                   | float         | [0, inf]                          | x 좌표                             
+|  y                   | float         | [0, inf]                          | y 좌표                             
+| distance_from_center | float         | [0, track_width/2]                | 트랙의 center 에서 벗어난 정도      
+| car_orientation      | float         | [-π, π]                           | 차량의 yaw                         
+| progress             | float         | [0, 1]                            | 트랙 주행 진척도
+| steps                | int           | [0, n]                            | 추론 action 마다 한 step 일 경우 steps 진행도
+| throttle             | float         | [0, 1]                            | 차량의 속도 1 = 최대속도
+| steering             | float         | [-1, 1]                           | -1 = 오른쪽, 1 = 왼쪽
+| track_width          | float         | [0, inf]                          | 트랙의 넓이
+| waypoint             | (float,float) | (Xw, Yw)                          | 트랙의 center 좌표 
+| waypoints            | list          | [(Xw,1,Yw,1), (Xw,2, Yw,2), …]    | 트랙의 center 좌표들
+| closest_waypoint     | int           | [0, number of waypoints -1]       | 차량 위치(zero point)에서 가까운 앞or뒤 waypoint 좌표 (유클리드 거리) 
+
 ```python
-def reward_function3(on_track, x, y, distance_from_center, car_orientation, progress, steps, throttle, streering, track_width, waypoints, closest_waypoint):
+def reward_function(on_track, x, y, distance_from_center, car_orientation, progress, steps, throttle, streering, track_width, waypoints, closest_waypoint):
 
     import math
     
@@ -126,6 +139,7 @@ def reward_function3(on_track, x, y, distance_from_center, car_orientation, prog
         reward *= 0.5
     
     return float(reward)
+
 ```
 
 ### AWS sagemaker & AWS robomaker 환경 적응하기

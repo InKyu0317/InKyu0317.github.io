@@ -64,6 +64,7 @@ title: study note about AWS Deepracer
     - Agent: (execute action, receive observation, receive reward) 
     - Environment: (receivess action, emits observation, emits reward)
     - <img src="../images/RL_2.png" alt="drawing" width="600"/>
+    - ![Image Alt 텍스트](../images/RL_2.png){:class="img-responsive"}
 - History(Agent side): the sequence of observations, actions, reward (H_t = O_1, R_1, A_1, ... , A_t-1, O_t, R_t)
 - State: information used to determine what happens next (S_t = f(H_t)) 히스토리를 가공해서 스테잇을 만든다.
 - Environment state: observation과 reward를 결정하게 되는 source 라고 볼수있다.
@@ -111,6 +112,7 @@ title: study note about AWS Deepracer
 | closest_waypoint     | int           | [0, number of waypoints -1]       | 차량 위치(zero point)에서 가까운 앞or뒤 waypoint 좌표 (유클리드 거리) 
 
 ```python
+
 def reward_function(on_track, x, y, distance_from_center, car_orientation, progress, steps, throttle, streering, track_width, waypoints, closest_waypoint):
 
     import math

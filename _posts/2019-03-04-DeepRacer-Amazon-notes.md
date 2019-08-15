@@ -49,7 +49,7 @@ title: study note about AWS Deepracer
 #### introduction
 
 - Reinforcement Learning<br>
-<img src="../images/RL_1.png" alt="drawing" width="600"/>
+<img src="/images/RL_1.png" alt="drawing" width="600"/>
 
 - 다른 기계학습과 다른점: 
   1. 강화학습에는 supervisor 가없다. Reward 만 존재. 답을 알려주는 사람이 없다.
@@ -63,16 +63,15 @@ title: study note about AWS Deepracer
 - 각 타임스탬프(timestamp) 마다
     - Agent: (execute action, receive observation, receive reward) 
     - Environment: (receivess action, emits observation, emits reward)
-    - <img src="../images/RL_2.png" alt="drawing" width="600"/>
-    - ![Image Alt 텍스트](../images/RL_2.png){:class="img-responsive"}
+    - <img src="/images/RL_2.png" alt="drawing" width="600"/>
 - History(Agent side): the sequence of observations, actions, reward (H_t = O_1, R_1, A_1, ... , A_t-1, O_t, R_t)
 - State: information used to determine what happens next (S_t = f(H_t)) 히스토리를 가공해서 스테잇을 만든다.
 - Environment state: observation과 reward를 결정하게 되는 source 라고 볼수있다.
-  - ATARI <img src="../images/ENV_STATE_1.png" alt="drawing" width="600"/> 
+  - ATARI <img src="/images/ENV_STATE_1.png" alt="drawing" width="600"/> 
   - 유저가 컨트롤러를 움직였을떄 다음 화면을 어떻게 보여줄지 computing 하게 되는데 이때 참조하게 되는 상수값(State가 그것과 비슷하다고 볼수있다.)
 
 - Agent State: 다음 action 을 하기 위해 쓰이는 정보들.
-  - <img src="../images/AGENT_STATE_1.png" alt="drawing" width="600"/>
+  - <img src="/images/AGENT_STATE_1.png" alt="drawing" width="600"/>
 
 - Markov State: State가 마르코프 하다?무슨뜻?? -> 오로지 현재 state 만 중요하다 (의사 결정을 한다)
   - Environment State 와 History 는 마르코프 하다
